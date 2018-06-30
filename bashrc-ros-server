@@ -1,0 +1,14 @@
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+export NVM_DIR="/home/mike/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+source /opt/ros/kinetic/setup.bash
+source ~/catkin_ws/install/setup.bash
+ROS_MASTER_URI=http://192.168.1.110:11311/
+ROS_IP=192.168.1.111
