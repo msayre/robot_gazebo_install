@@ -23,6 +23,10 @@ cd robot_gazebo_install && ./install.bash
 
 ## Configure IP addresses
 
+- Edit install.bash with intended IP addresses
+OR
+- If you have already run install.bash
+
 ```
 sudo nano /etc/hosts/
 ```
