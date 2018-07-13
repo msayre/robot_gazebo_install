@@ -9,7 +9,7 @@
 sudo apt -y install git
 mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/src
 git clone https://github.com/msayre/robot_intercept
-cd robot_gazebo_install && ./install.bash
+cd robot_intercept && ./install.bash
 ```
 
 ## Running server on VM
